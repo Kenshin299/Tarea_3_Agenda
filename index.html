@@ -5,12 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="js/script.js" defer></script>
-    <style type="text/css" src="css/style.css"></style>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono">
+    <title>Agenda Personal</title>
 </head>
 <body>
-    <div>
-        Hola
+    <header class="header">
+        <h1>Agenda Personal</h1>
+    </header>
+    <div class="flex-container">
+        <section class="section-newContact">
+            <div class="header">
+                <h2>Nuevo Contacto</h1>
+            </div>
+            <div class="flex-container">
+                <div class="container-agenda">
+                    <form action="">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Nombre ✏️">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Apellidos ✏️">
+                        <label for="telNum">Número de Teléfono</label>
+                        <input type="tel" id="telNum" placeholder="Número de Teléfono ✏️">
+                    </form>
+                </div>
+            </div>
+        </section>
+       
+        <section class="section-contact">
+            <div class="container-contact">
+                <!-- Contactos traidos con fetch -->
+            </div>
+        </section>
     </div>
 </body>
 </html>
