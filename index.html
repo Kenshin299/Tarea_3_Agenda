@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono">
     <title>Agenda Personal</title>
 </head>
-<body>
+<body onload="addContacts()">
     <header class="header">
         <h1>Agenda Personal</h1>
     </header>
@@ -20,21 +20,29 @@
             </div>
             <div class="flex-container">
                 <div class="container-agenda">
-                    <form action="">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" placeholder="Nombre ✏️">
+                    <form id="form" action="">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre ✏️">
                         <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="Apellidos ✏️">
-                        <label for="telNum">Número de Teléfono</label>
-                        <input type="tel" id="telNum" placeholder="Número de Teléfono ✏️">
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellidos ✏️">
+                        <label for="telefono">Número de Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Número de Teléfono ✏️">
+                        <div class="header">
+                            <input type="button" name="btn-agregar" value="Agregar" onclick="enviarJSON(this.form)">
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
        
         <section class="section-contact">
-            <div class="container-contact">
-                <!-- Contactos traidos con fetch -->
+            <div class="header">
+                <h2>Lista de Contactos</h1>
+            </div>
+            <div class="flex-container">
+                <div id="contacts" class="container-contact">
+                    <!-- Contactos traidos con fetch -->
+                </div>
             </div>
         </section>
     </div>
