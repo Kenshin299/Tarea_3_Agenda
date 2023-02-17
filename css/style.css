@@ -105,5 +105,18 @@ input[type="button"]:hover {
 }
 
 .container-contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
     padding: 0;
+}
+
+.contacts {
+    background-color: #292c34;
+    padding: 1rem;
+    border: #cbcfc6;
+    border-radius: 4px;
 }
