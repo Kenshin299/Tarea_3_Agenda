@@ -6,3 +6,4 @@ por Kemyl Fernandez Bonifacio 2021-2302
 ![Primera Captura de Pantalla](/img/a3.jpg)
 ![Primera Captura de Pantalla](/img/a4.jpg)
 ![Primera Captura de Pantalla](/img/a5.jpg)
+![Primera Captura de Pantalla](/img/a6.jpg)
